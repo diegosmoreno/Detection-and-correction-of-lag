@@ -50,7 +50,11 @@ Los resultados parciales tampoco se incluyen por protección de datos. Los resul
 
 ## REFERENCIAS 
 Se incluye código inspirado o tomado parcialmente de:
+
+Para las métricas de evaluación:
 * Ciro Rodríguez León. Intelligent Monitoring of Diabetes Mellitus by means of Mobile and Wearable Devices. PhD thesis, Universidad de Granada, Granada, España, 2024.
+
+Para Subsequence-DTW:
 * Meinard Müller. Fundamentals of Music Processing: Using Python and Jupyter Notebooks. Springer, 2 edition, 2021.
 
 ## Licencia
