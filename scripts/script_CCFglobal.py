@@ -77,7 +77,7 @@ def calcular_ccf_completa(y_real, y_pred, max_lag):
 for modelo in lista_modelo:
     for hp in lista_horizonte:
         
-        filepath = '/opt/datasets/prediction_vectors/2026-04/result_parquet_{}/df_test_results_vectors_RMSE_{}_H{}.parquet'.format(dataset,modelo, hp)
+        filepath = '/CARPETA/result_parquet_{}/df_test_results_vectors_RMSE_{}_H{}.parquet'.format(dataset,modelo, hp)
 
         # Leer datos
         df = pd.read_parquet(filepath)
@@ -208,5 +208,5 @@ for modelo in lista_modelo:
         df_resultado.loc[df_resultado["block_id"].isna(), "y_corr"] = np.nan
 
         # Escribir en un csv el dataframe resultados     
-        output_file_name = '/home/diegosmc/resultados0106/df_time_lags_results_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
+        output_file_name = '/CARPETA/resultadosccfglobal/df_time_lags_results_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
         df_resultado.to_csv(output_file_name, index=False)
