@@ -560,7 +560,7 @@ resultados = []
 for modelo in lista_modelo:
     for hp in lista_horizonte:
         
-        filepath = '/home/diegosmc/resultados0106/df_time_lags_results_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
+        filepath = '/CARPETA/resultadosccfglobal/df_time_lags_results_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
 
         # Cargar los datos
         df = pd.read_csv(filepath)
@@ -617,13 +617,13 @@ for modelo in lista_modelo:
                                                     maximum_sensor_reading=maximum_sensor_reading)
 
 
-        output_file_name_1 = '/home/diegosmc/resultados0106/metricas/df_time_lags_results_ORIGINAL_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
+        output_file_name_1 = '/CARPETA/resultadosccfglobal/metricas/df_time_lags_results_ORIGINAL_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
         metrics_by_range.to_csv(output_file_name_1, index=False)
 
-        output_file_name_2 = '/home/diegosmc/resultados0106/metricas/df_time_lags_results_CORREGIDO_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
+        output_file_name_2 = '/CARPETA/resultadosccfglobal/metricas/df_time_lags_results_CORREGIDO_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
         metrics_by_range_corr.to_csv(output_file_name_2, index=False)
 
-        output_file_name_3 = '/home/diegosmc/resultados0106/metricas/df_time_lags_results_SOLOCORREGIDO_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
+        output_file_name_3 = '/CARPETA/resultadosccfglobal/metricas/df_time_lags_results_SOLOCORREGIDO_{}_{}_H{}_minmuest_{}.csv'.format(dataset, modelo, hp,min_muestras)
         metrics_by_range_solo_corr.to_csv(output_file_name_3, index=False)
 
 
