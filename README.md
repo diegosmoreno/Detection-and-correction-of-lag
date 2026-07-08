@@ -48,6 +48,11 @@ Los resultados parciales tampoco se incluyen por protección de datos. Los resul
 * Máster en DATA SCIENCE AND COMPUTER ENGINEERING
 * Universidad DE GRANADA
 
+## REFERENCIAS 
+Se incluye código inspirado o tomado parcialmente de:
+* Ciro Rodríguez León. Intelligent Monitoring of Diabetes Mellitus by means of Mobile and Wearable Devices. PhD thesis, Universidad de Granada, Granada, España, 2024.
+* Meinard Müller. Fundamentals of Music Processing: Using Python and Jupyter Notebooks. Springer, 2 edition, 2021.
+
 ## Licencia
 
 Este repositorio se ha creado con fines académicos como parte del Trabajo Fin de Máster.
