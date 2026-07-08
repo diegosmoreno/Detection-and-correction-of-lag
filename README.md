@@ -1,70 +1,53 @@
 # Detection-and-correction-of-lag
 
-# Título del TFM
+# Detecting and Correcting Data Misalignment in Continuous Glucose Monitoring Forecast Evaluation
 
 ## Descripción
 
-Este repositorio contiene el código desarrollado para el Trabajo Fin de Máster titulado **"Título del TFM"**.
+Este repositorio contiene el código desarrollado para el Trabajo Fin de Máster titulado **"Detecting and Correcting Data Misalignment in Continuous Glucose Monitoring Forecast Evaluation"**.
 
-El objetivo del proyecto es **[describir brevemente el objetivo del TFM en 2–3 líneas]**.
+El objetivo del proyecto es **desarrollar una metodología sólida para detectar y corregir los desajustes sistemáticos o time lags entre los resultados de las predicciones de los niveles de glucosa en sangre y las mediciones reales correspondientes, garantizando así una evaluación realista del rendimiento del modelo de predicción**.
 
 ## Estructura del repositorio
 
 ```text
-├── src/            # Código fuente del proyecto
-├── data/           # Datos de entrada y procesamiento
-├── notebooks/      # Cuadernos Jupyter (si procede)
-├── results/        # Resultados, figuras y tablas
-├── docs/           # Documentación adicional
+├── scripts/        # Código utilizado para la consecución de resultados
 ├── README.md       # Documentación principal
-└── requirements.txt # Dependencias del proyecto
 ```
 
 ## Requisitos
 
 * Python 3.x
-* Dependencias indicadas en `requirements.txt`
+* Las librerías necesarias se incluyen en cada uno de los scripts
 
-## Instalación
 
-Clonar el repositorio:
+## Scripts
+En la carpeta de scripts se incluyen dos archivos de código en Python para cada una de las metodologías propuestas y detalladas en la memoria del TFM. Uno de los scripts lleva a cabo las labores de preprocesamiento y aplica la función CCF o DTW, global o en tiempo real. Este script devuelve añade básicamente al conjunto de datos de entrada la serie de predicciones corregida y valores del lag detectado. En cada script se explica detalladamente el código.
 
-```bash
-git clone https://github.com/usuario/nombre-del-repositorio.git
-cd nombre-del-repositorio
-```
-
-Instalar las dependencias:
-
-```bash
-pip install -r requirements.txt
-```
+El otro script incluido para cada técnica sirve para calcular las métricas de evaluación empleando la serie de predicciones sin corregir y corregida.
 
 ## Ejecución
 
-Para ejecutar el proyecto:
+Cada uno de los scripts está listo para ejecutarse directamente, tan solo es necesario elegir el archivo de datos de entrada que va a ser analizado.
 
 ```bash
-python src/main.py
+python3 scripts/file.py
 ```
-
-Si el proyecto dispone de diferentes scripts, estos se encuentran en la carpeta `src/`.
 
 ## Datos
 
-Los datos utilizados en este proyecto se encuentran en la carpeta `data/`.
-
-Si los datos no pueden distribuirse públicamente, en esta carpeta se incluye únicamente la estructura necesaria y las instrucciones para obtenerlos.
+Por protección de datos, no se incluyen los datasets de entrada empleados. La descripción de estos datasets y sus referencias se incluyen en el capítulo 3 de la memoria.
 
 ## Resultados
 
-Los resultados generados por el proyecto (figuras, tablas o métricas) se almacenan en la carpeta `results/`.
+Los resultados parciales tampoco se incluyen por protección de datos. Los resultados finales pueden consultarse completamente en la sección de resultados de la memoria del TFM, así como en los anexos de esta.
 
 ## Autor
 
-* Nombre y apellidos
-* Máster en [Nombre del máster]
-* Universidad [Nombre de la universidad]
+* Diego Sebastián Moreno Ceacero
+* Máster en [DATA SCIENCE AND COMPUTER
+ENGINEERING]
+* Universidad [DE GRANADA]
 
 ## Licencia
 
