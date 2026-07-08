@@ -28,7 +28,7 @@ El otro script incluido para cada técnica sirve para calcular las métricas de 
 
 ## Ejecución
 
-Cada uno de los scripts está listo para ejecutarse directamente, tan solo es necesario elegir el archivo de datos de entrada que va a ser analizado.
+Cada uno de los scripts está listo para ejecutarse directamente, tan solo es necesario elegir el archivo de datos de entrada que va a ser analizado y escribir las rutas correctas de los archivos necesarios.
 
 ```bash
 python3 scripts/file.py
