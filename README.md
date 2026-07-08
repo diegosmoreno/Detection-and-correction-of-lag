@@ -45,9 +45,8 @@ Los resultados parciales tampoco se incluyen por protección de datos. Los resul
 ## Autor
 
 * Diego Sebastián Moreno Ceacero
-* Máster en [DATA SCIENCE AND COMPUTER
-ENGINEERING]
-* Universidad [DE GRANADA]
+* Máster en DATA SCIENCE AND COMPUTER ENGINEERING
+* Universidad DE GRANADA
 
 ## Licencia
 
