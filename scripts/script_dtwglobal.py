@@ -151,7 +151,7 @@ min_muestras = 50
 for modelo in lista_modelo:
     for hp in lista_horizonte:
         
-        filepath = '/opt/datasets/prediction_vectors/2026-04/result_parquet_{}/df_test_results_vectors_RMSE_{}_H{}.parquet'.format(dataset,modelo, hp)
+        filepath = '/CARPETA/result_parquet_{}/df_test_results_vectors_RMSE_{}_H{}.parquet'.format(dataset,modelo, hp)
 
         # Leer datos
         df = pd.read_parquet(filepath)
@@ -282,6 +282,6 @@ for modelo in lista_modelo:
 
         
         # Escribir en un parquet el dataframe resultados     
-        output_file_name = '/home/diegosmc/resultadosdtwglobal/df_time_lags_results_{}_{}_H{}.parquet'.format(
+        output_file_name = '/CARPETA/resultadosdtwglobal/df_time_lags_results_{}_{}_H{}.parquet'.format(
         dataset, modelo, hp)
         df_resultado.to_parquet(output_file_name, index=False)
